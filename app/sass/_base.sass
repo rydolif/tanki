@@ -1,0 +1,68 @@
+@import "fonts"
+
+
+//----------------------fonts---------------------
+$fonts: 'OpenSans', sans-serif
+//---------------------end-fonts---------------------
+
+//----------------------color---------------------
+$accent: #e23030
+$text: #fff
+
+//---------------------end-color---------------------
+
+body
+	overflow-x: hidden
+	position: relative
+	min-width: 320px
+	font-family: $fonts
+	font-size: 14px
+	color: $text
+	line-height: 1.4
+	font-weight: 400
+	background: radial-gradient(45.309em at 50% 43.45%, rgba(86, 87, 105, 0.9) 0%, rgb(50, 54, 62) 100%)
+
+::selection
+	background-color: $accent
+	color: #fff
+
+a, div, ul, li, input, textarea
+	&:hover,
+	&:focus
+		outline: none
+	
+h1, h2, h3, h4, h5, h6
+	font-weight: 700
+	margin: 0
+	padding: 0
+
+input
+	transition: all .6s
+
+label
+	margin-bottom: 0
+
+ul
+	margin: 0
+	padding: 0
+	list-style-type: none
+
+i
+	font-style: normal
+	font-size: 16px
+	color: #fff
+
+
+b, strong
+	font-weight: 700
+
+p
+	margin: 0
+	padding: 0
+
+// @import "_base/preloader"
+// @import "_base/animation"
+// @import "_base/btn"
+// @import "_base/form"
+// @import "_base/modal"
+// @import "_base/hamburger"
